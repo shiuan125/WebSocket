@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container" id="app">
+    <div class="row">
+        <input class="col-4 m-1" id="userName" />
+        <input class="col-6 m-1" id="message" placeholder="message" />
+        <button class="col-1 m-1 btn btn-secondary" id="send">Send</button>
+    </div>
+    <div class="p-2 chat">
+        <ul id="list">
+        </ul>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/scoket.js" asp-append-version="true"></script>
+}
